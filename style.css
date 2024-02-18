@@ -109,11 +109,6 @@ body, html {
 /* PROFILE PAGE */ 
 
 
-body, html {
-  height: 100%;
-  font-family: 'Inter', sans-serif; /* Assuming 'Inter' is the font used */
-}
-
 .medical-profile {
   background-color: white; 
   min-height: 100vh;
@@ -124,7 +119,7 @@ body, html {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to right, #45CDC5, #5BBEDD); /* Apply the gradient here */
-  padding: 1rem 2rem; /* Adjust padding as needed */
+  padding: 1rem; /* Adjust padding as needed */
 }
 
 .home-button {
@@ -153,16 +148,35 @@ body, html {
 .header h1 {
   color: black;
   margin-bottom: 1rem;
-  
-}.start-routine-button {
+}
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+}
+.button-container {
+  display: flex;
+  justify-content: center; /* Aligns the button horizontally center */
+  align-items: center; /* Aligns the button vertically center */
+}
+.exercise-plan,
+.week-goal {
+  margin: 0;
+  padding: 0;
+  width: 48%; /* Each takes up roughly half the width */
+}
+
+.start-routine-button {
   display: inline-block; /* Allows padding and width to be applied correctly */
-  padding: 10px 20px;
+  padding: 15px 30px;
   background-color: #45CDC5; /* Teal background */
   border: none;
   border-radius: 5px;
   color: white; /* White text */
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
+  margin: 20px auto;
   cursor: pointer;
   text-decoration: none; /* Removes underline from link */
   text-align: center;
@@ -176,7 +190,10 @@ body, html {
 
 .session-history {
   /* Styles for the history section */
-  margin-top: 20px; /* Adjust spacing as needed */
+  margin: 20px auto;
+  width: 35%; 
+  max-width: 600px; /* Maximum width */
+
 }
 
 .history-list {
@@ -198,10 +215,6 @@ body, html {
   color: green; /* Color for the check mark */
   font-size: 24px; /* Size of the check mark */
 }
-
-
-
-/* ... existing CSS ... */
 
 .content-container {
   display: flex;
@@ -236,9 +249,7 @@ body, html {
   color: #333; /* Dark text color for readability */
 }
 
-.week-goal {
-  /* Styles for the week goal */
-}
+
 
 .doctor-note {
   border: 2px solid #45CDC5; /* Border color to match the design */
@@ -246,6 +257,7 @@ body, html {
   padding: 1rem; /* Padding for the note */
   margin-top: 1rem; /* Space at the top */
 }
+
 
 
 /* ... additional CSS as needed ... */
@@ -258,15 +270,19 @@ body, html {
 
 .active-session-header {
   background: linear-gradient(to right, #45CDC5, #5BBEDD);
-  padding: 10px 20px;
+  padding: 1rem;
+  color: white;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-title {
   font-weight: bold;
   color: white;
+  position: absolute; /* Position it absolutely within the header */
+  left: 50%; /* Position it from the left 50% of the header */
+  transform: translateX(-50%); /* Shift it back to the left by half of its width */
 }
 
 .return-button {
@@ -290,21 +306,20 @@ body, html {
 }
 .stop-button {
   display: inline-block; /* Allows padding and width to be applied correctly */
-  padding: 10px 20px;
+  padding: 15px 30px;
+  background-color: lightcoral; /* Teal background */
   border: none;
   border-radius: 5px;
   color: white; /* White text */
-  background-color: #FF4136; /* Red background for the stop button */
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
+  margin: 20px auto;
   cursor: pointer;
   text-decoration: none; /* Removes underline from link */
   text-align: center;
   transition: background-color 0.3s ease;
 }
-.stop-button {
-  background-color: lightcoral; /* Red background for the stop button */
-}
+
 .stop-button:hover {
   background-color: lightpink; /* Darker red on hover for stop button */
 }
@@ -354,11 +369,6 @@ button {
   cursor: pointer;
 }
 
-.stop-button {
-  background-color: lightcoral;
-  border-radius: 5px;
-  font-weight: bold;
-}
 
 /* Adjust the layout further with your own styles, colors, and sizes as needed */
 /* AFTER SESSION SUMMARY PAGE*/
@@ -366,11 +376,18 @@ button {
 
 .session-summary-header {
   background: linear-gradient(to right, #45CDC5, #5BBEDD);
-  padding: 10px 20px;
+  padding: 1rem;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.logo-container img{
+  width: 85px !important; /* Or whatever width you prefer */
+  height: auto !important;
+  border-radius: 30px;
+  margin-left: 25px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header-content {
@@ -378,13 +395,7 @@ button {
   align-items: center;
 }
 
-.menu-button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-}
+
 
 h1 {
   margin-left: 20px;
