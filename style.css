@@ -8,63 +8,50 @@
 body, html {
   font-family: 'Inter', sans-serif; /* Assuming 'Inter' is the font used */
   height: 100%;
+  overflow-x: hidden;
 }
 
 .homepage {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 }
 
 .menu {
+  background: linear-gradient(90deg, #45CDC5 0%, #5BBEDD 100%);
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.logo-container {
-  /* Style your logo container */
-}
-
-.auth-buttons {
-  /* Adjust as needed */
-}
-
-.sign-in-button,
-.sign-up-button {
-  margin-left: 10px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.sign-up-button {
-  background-color: #5BBEDD;
-  color: white;
+.logo-container img{
+  width: 85px !important; /* Or whatever width you prefer */
+  height: auto !important;
+  border-radius: 30px;
+  margin-left: 50px;
 }
 
 .content {
-  margin-top: 0;
-  flex: 1;
+  padding: 20px; /* Adjust padding as needed */
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+  flex-direction: column;
+  justify-content: flex-start; 
 }
 
 .intro {
-  margin-top: 0; /* Adjust this value to move the content up */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Wrap items on smaller screens */
+  padding: 2rem;
 }
 
-.intro-text {
+.intro-text,
+.intro-image-container {
   max-width: 50%;
+  flex: 1;
+  padding: 10px;
 }
 
 .intro-text h1 {
@@ -78,17 +65,19 @@ body, html {
 }
 
 .get-started-button {
+  display: inline-block;
   padding: 15px 30px;
-  background-color: #4497B1;
+  background-color: #5BBEDD;
   border-radius: 10px;
   border: none;
-  color: white;
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: none; /* Removes the underline from links */
   cursor: pointer;
+  font-weight: bold; 
+  font-size: 20px;
 }
 
-.intro-image-container {
-  max-width: 50%;
-}
 
 .intro-image {
   width: 100%;
@@ -271,12 +260,10 @@ button {
   cursor: pointer;
 }
 
-.pause-button, .resume-button {
-  background-color: #FFD700; /* Example color */
-}
-
-.emergency-stop-button {
-  background-color: #FF6347; /* Example color */
+.stop-button {
+  background-color: lightcoral;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 /* Adjust the layout further with your own styles, colors, and sizes as needed */
