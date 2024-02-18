@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body, html {
+  font-family: 'Inter', sans-serif; /* Assuming 'Inter' is the font used */
+  height: 100%;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-container {
+  /* Style your logo container */
+}
+
+.auth-buttons {
+  /* Adjust as needed */
+}
+
+.sign-in-button,
+.sign-up-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-up-button {
+  background-color: #5BBEDD;
+  color: white;
+}
+
+.content {
+  margin-top: 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.intro {
+  margin-top: 0; /* Adjust this value to move the content up */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.intro-text {
+  max-width: 50%;
+}
+
+.intro-text h1 {
+  font-size: 36px;
+  margin-bottom: 1rem;
+}
+
+.intro-text p {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.get-started-button {
+  padding: 15px 30px;
+  background-color: #4497B1;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.intro-image-container {
+  max-width: 50%;
+}
+
+.intro-image {
+  width: 100%;
+  height: auto;
+  border-radius: 43px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mission {
+  text-align: center;
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  .intro-text {
+    max-width: 100%;
+    text-align: center;
+  }
+  .intro-image-container {
+    max-width: 100%;
+  }
+}
+
+/* PROFILE PAGE */ 
+
+
+body, html {
+  height: 100%;
+  font-family: 'Inter', sans-serif; /* Assuming 'Inter' is the font used */
+  background-color: #ffff;
+}
+
+.medical-profile {
+  background-color: white; 
+  min-height: 100vh;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #45CDC5, #5BBEDD); /* Apply the gradient here */
+  padding: 1rem 2rem; /* Adjust padding as needed */
+}
+
+.home-button {
+  background: whitesmoke;
+  color: black;
+  border: 1px solid #fff; /* Border color for the button */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* If it's a link styled as a button */
+  font-weight: bold;
+}
+
+.header {
+  padding: 2rem;
+  background-color: white;
+  color: #333;
+}
+
+.header h1 {
+  color: black;
+  margin-bottom: 1rem;
+}
+
+/* ... existing CSS ... */
+
+.content-container {
+  display: flex;
+  justify-content: space-between; /* This will place the content and the exercise plan side by side */
+  padding: 2rem; /* Add padding for spacing */
+  padding-left: 5%;
+}
+
+.welcome-section {
+  flex: 1; /* Takes up remaining space */
+  /* Additional styling for the welcome section */
+}
+
+.exercise-plan {
+  flex: 0 0 45%; /* Locks the exercise plan to 40% width of the container */
+  max-width: 45%; 
+  background-color: #fff; /* Set the background color */
+  padding: 2rem;
+  padding-left: 5%;
+  border-radius: 10px; /* Rounded corners for the plan */
+}
+
+.exercise-item {
+  background-color: #E0F7FA; /* Light teal background for each item */
+  border-radius: 10px; /* Rounded corners for the items */
+  padding: 1rem; /* Padding inside each exercise item */
+  margin-bottom: 1rem; /* Space between exercise items */
+  /* You can add a border or shadow to each item if needed for better separation */
+}
+
+.exercise-item h3 {
+  color: #333; /* Dark text color for readability */
+}
+
+.week-goal {
+  /* Styles for the week goal */
+}
+
+.doctor-note {
+  border: 2px solid #45CDC5; /* Border color to match the design */
+  border-radius: 10px; /* Rounded corners */
+  padding: 1rem; /* Padding for the note */
+  margin-top: 1rem; /* Space at the top */
+}
+
+
+/* ... additional CSS as needed ... */
+
+/* ... additional CSS as needed ... */
+
+/* Additional styling as needed for progress section and other components */
+
+/* ACTIVE SESSION PAGE*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.active-session-header {
+  background: linear-gradient(to right, #45CDC5, #5BBEDD);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-weight: bold;
+  color: white;
+}
+
+.return-button {
+  padding: 5px 15px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.active-session-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sidebar, .session-controls {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.webcam-feed {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ccc; /* Placeholder for the webcam feed area */
+}
+
+/* Add specific styling for buttons and webcam area */
+button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.pause-button, .resume-button {
+  background-color: #FFD700; /* Example color */
+}
+
+.emergency-stop-button {
+  background-color: #FF6347; /* Example color */
+}
+
+/* Adjust the layout further with your own styles, colors, and sizes as needed */
+/* AFTER SESSION SUMMARY PAGE*/
+
+
+.session-summary-header {
+  background: linear-gradient(to right, #45CDC5, #5BBEDD);
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+h1 {
+  margin-left: 20px;
+}
+
+.session-summary-content {
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.feedback-section {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 100px;
+}
+
+.recovery-tips {
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.recovery-tips h3 {
+  margin-bottom: 10px;
+}
+
+.recovery-tips ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recovery-tips li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.recovery-tips li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: green;
+}
+/* Add this to your existing CSS */
+
+.navigation {
+  padding: 10px 20px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.back-to-profile {
+  text-decoration: none;
+  color: #333;
+  background: #e0f7fa;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.back-to-profile:hover {
+  background: #bde1ee;
+}
