@@ -25,7 +25,10 @@ body, html {
   align-items: center;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+.brand-name {
+  font-size: 150%;
+  color: #5BBEDD; /* Adjust the percentage to your liking */
+}
 .logo-container img{
   width: 85px !important; /* Or whatever width you prefer */
   height: auto !important;
@@ -329,27 +332,34 @@ body, html {
   padding: 20px;
 }
 
-.sidebar, .session-controls {
+.session-controls {
   flex-basis: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .session-main {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .session-info {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+  width: 100%;
   padding-bottom: 20px; /* Add space between the info and the webcam feed */
+}
+.current-exercise{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .webcam-feed {
-  flex-basis: 60%; /* You can remove this if you want a fixed size instead of a flex basis */
   width: 640px; /* Set a fixed width for your webcam feed */
   height: 480px; /* Set a fixed height for your webcam feed */
   display: flex;
@@ -361,10 +371,12 @@ body, html {
   margin: auto; /* Placeholder for the webcam feed area */
 }
 
+
 /* Add specific styling for buttons and webcam area */
-button {
-  margin: 10px 0;
+button , .stop-button{
   padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
   border: none;
   cursor: pointer;
 }
@@ -394,7 +406,29 @@ button {
   display: flex;
   align-items: center;
 }
+.header-title{
+  font-size: large;
+}
 
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: calc(100vh - 60px); /* Adjust height calculation based on actual header/footer size */
+}
+.left-container,
+.right-container {
+  width: 48%; /* Adjust width as needed for spacing */
+}
+.left-container h2{
+  color: #333;
+  margin-bottom: 20px;
+}
+.feedback-section,
+.recovery-tips {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
 
 
 h1 {
@@ -455,6 +489,17 @@ textarea {
   left: 0;
   color: green;
 }
+
+.footer {
+  position: fixed;
+  justify-content: space-between;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #f8f8f8;
+  border-top: 1px solid #e7e7e7;
+  text-align: center; /* Centers the content of the footer */
+}
 /* Add this to your existing CSS */
 
 .navigation {
@@ -470,6 +515,7 @@ textarea {
   padding: 10px 15px;
   border-radius: 5px;
   font-weight: bold;
+  align-items: center;
 }
 
 .back-to-profile:hover {
