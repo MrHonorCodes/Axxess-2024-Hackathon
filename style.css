@@ -31,6 +31,7 @@ body, html {
   height: auto !important;
   border-radius: 30px;
   margin-left: 50px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .content {
@@ -203,11 +204,6 @@ body, html {
 /* Additional styling as needed for progress section and other components */
 
 /* ACTIVE SESSION PAGE*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 .active-session-header {
   background: linear-gradient(to right, #45CDC5, #5BBEDD);
@@ -242,14 +238,29 @@ body, html {
   align-items: center;
 }
 
+.session-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.session-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px; /* Add space between the info and the webcam feed */
+}
+
 .webcam-feed {
-  flex-basis: 60%;
+  flex-basis: 60%; /* You can remove this if you want a fixed size instead of a flex basis */
+  width: 640px; /* Set a fixed width for your webcam feed */
+  height: 480px; /* Set a fixed height for your webcam feed */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
   border: 1px solid #ccc; /* Placeholder for the webcam feed area */
+  margin: auto; /* Placeholder for the webcam feed area */
 }
 
 /* Add specific styling for buttons and webcam area */
