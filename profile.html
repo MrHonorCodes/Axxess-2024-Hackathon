@@ -10,13 +10,12 @@
 <body>
   <div class="medical-profile">
     <nav class="navigation">
-      <button class="home-button">HOME</button>
+      <a href="index.html" class="home-button">HOME</a>
     </nav>
     <header class="header">
       <h1>Welcome Back! Ready for your Next Session?</h1>
     </header>
     <div class="progress-section">
-      <!-- Progress bars and content will go here -->
     </div>
     <section class="exercise-plan">
         <h2>Exercise Plan</h2>
@@ -39,6 +38,23 @@
         </div>
         <!-- Additional content can be added here -->
       </section>
-  </div>
+      <!-- Inside your profile.html where you want the button to appear -->
+      <a href="active-session.html" class="start-routine-button">Start Routine</a>
+          <!-- History section -->
+    <section class="session-history">
+      <h2>History</h2>
+      <ul class="history-list">
+        <li class="history-item">
+          <span>SESSION 1 - 02/01/2024</span>
+          <span class="status-icon">&#10004;</span> <!-- This is a check mark symbol -->
+        </li>
+        <li class="history-item">
+          <span>SESSION 2 - 02/05/2024</span>
+          <span class="status-icon">&#10004;</span> <!-- This is a check mark symbol -->
+        </li>
+        <!-- More history items can be added here -->
+      </ul>
+    </section>
+    </div>
 </body>
 </html>

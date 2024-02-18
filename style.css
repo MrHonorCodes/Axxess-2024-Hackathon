@@ -112,7 +112,6 @@ body, html {
 body, html {
   height: 100%;
   font-family: 'Inter', sans-serif; /* Assuming 'Inter' is the font used */
-  background-color: #ffff;
 }
 
 .medical-profile {
@@ -129,16 +128,22 @@ body, html {
 }
 
 .home-button {
-  background: whitesmoke;
-  color: black;
-  border: 1px solid #fff; /* Border color for the button */
-  padding: 0.5rem 1rem;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
   border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none; /* If it's a link styled as a button */
+  background-color: whitesmoke; /* Your teal color */
+  color: black; /* Text color */
+  font-size: 16px;
   font-weight: bold;
+  text-align: center;
+  text-decoration: none; /* Remove the underline from links */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-
+.home-button:hover {
+  background-color: lightcyan; /* Slightly darker teal on hover */
+}
 .header {
   padding: 2rem;
   background-color: white;
@@ -148,7 +153,53 @@ body, html {
 .header h1 {
   color: black;
   margin-bottom: 1rem;
+  
+}.start-routine-button {
+  display: inline-block; /* Allows padding and width to be applied correctly */
+  padding: 10px 20px;
+  background-color: #45CDC5; /* Teal background */
+  border: none;
+  border-radius: 5px;
+  color: white; /* White text */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none; /* Removes underline from link */
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
+
+
+.start-routine-button:hover {
+  background-color: #39b2a9; /* Slightly darker teal on hover */
+}
+
+.session-history {
+  /* Styles for the history section */
+  margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.history-list {
+  list-style: none; /* Removes default list styling */
+  padding: 0;
+}
+
+.history-item {
+  background-color: #e6f7ff; /* Light blue background for history items */
+  padding: 10px;
+  margin-bottom: 10px; /* Space between history items */
+  border-radius: 5px; /* Rounded corners */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-icon {
+  color: green; /* Color for the check mark */
+  font-size: 24px; /* Size of the check mark */
+}
+
+
 
 /* ... existing CSS ... */
 
@@ -219,12 +270,44 @@ body, html {
 }
 
 .return-button {
-  padding: 5px 15px;
-  background-color: white;
+  display: inline-block; /* Allows padding and width to be applied correctly */
+  padding: 10px 20px;
   border: none;
+  border-radius: 5px;
+  color: black; /* White text */
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
+  text-decoration: none; /* Removes underline from link */
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
-
+.return-button {
+  background-color: white; /* Teal background for the return button */
+}
+.return-button:hover {
+  background-color: lightcyan; /* Slightly darker teal on hover for return button */
+}
+.stop-button {
+  display: inline-block; /* Allows padding and width to be applied correctly */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white; /* White text */
+  background-color: #FF4136; /* Red background for the stop button */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none; /* Removes underline from link */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.stop-button {
+  background-color: lightcoral; /* Red background for the stop button */
+}
+.stop-button:hover {
+  background-color: lightpink; /* Darker red on hover for stop button */
+}
 .active-session-content {
   display: flex;
   justify-content: space-between;
